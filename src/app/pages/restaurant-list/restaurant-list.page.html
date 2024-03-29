@@ -1,0 +1,44 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>restaurantList</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Anasayfa</ion-title>
+      
+    </ion-toolbar>
+  </ion-header>
+</ion-content> -->
+
+
+<!--   
+
+  <div *ngFor="let restaurant of restaurant">
+        <p>{{ restaurant.title }}</p>
+
+      <p>{{ restaurant.text }}</p>
+
+      <p>Type: {{ restaurant.type }}</p>
+      </div> -->
+   
+       <ion-header>
+        <ion-toolbar>
+          <ion-title>
+            Restaurant List
+          </ion-title>
+        </ion-toolbar>
+      </ion-header>
+      
+      <ion-content>
+        <ion-list>
+          <ion-item *ngFor="let restaurant of restaurants">
+            <ion-label>{{ restaurant.name }}</ion-label>
+            <ion-note slot="end">{{ restaurant.address }}</ion-note>
+          </ion-item>
+        </ion-list>
+      </ion-content> 
+
+     
