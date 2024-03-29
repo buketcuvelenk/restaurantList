@@ -24,7 +24,7 @@ export class RestaurantService {
       skip: 0,
       limit: 0,
       latitude: 0,
-      longitude: 0
+      longitude:0
     };
 
 

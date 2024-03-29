@@ -24,7 +24,7 @@
       <p>Type: {{ restaurant.type }}</p>
       </div> -->
    
-       <ion-header>
+       <!-- <ion-header>
         <ion-toolbar>
           <ion-title>
             Restaurant List
@@ -39,6 +39,64 @@
             <ion-note slot="end">{{ restaurant.address }}</ion-note>
           </ion-item>
         </ion-list>
-      </ion-content> 
+        
+      </ion-content>  -->
+      <!-- <ion-content>
+        <ion-searchbar placeholder="Mekan ara"></ion-searchbar>
+      </ion-content>
+      <ion-list>
+        <ion-item *ngFor="let restaurant of restaurants">
+          <ion-avatar>
+            <img src="https://i.nefisyemektarifleri.com/2023/09/28/cay-kac-kalori.jpg">
+          </ion-avatar>
+          <h2>{{ restaurant.name }}</h2> <br>
+          <p>Coffee, Tatlı</p>
+          <ion-note>Min. Sipariş Tutan: 630</ion-note>
+          <ion-badge color="success">4.9</ion-badge>
+          <p>3 km yakınında</p>
+          <p>İşletme Açık 10:00/22:00</p>
+        </ion-item>
+        <ion-item>
+          <ion-avatar>
+            <img src="data:image/jpeg;base64,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">
+          </ion-avatar>
+          <h2>Marlenka Honey</h2>
+          <p>Tatlı</p>
+          <ion-badge color="warning">4.2</ion-badge>
+          <p>2 km yakınında</p>
+          <p>Stokta Var</p>
+        </ion-item>
+        <ion-item>
+          <ion-avatar>
+            <img src="https://image.milimaj.com/i/milliyet/75/0x410/609a555d55427f0a548a5f57.jpg">
+          </ion-avatar>
+          <h2>Swiss Roll</h2>
+          <p>Tatlı</p>
+          <ion-badge color="danger">3.8</ion-badge>
+          <p>5 km yakınında</p>
+          <p>Stokta Yok</p>
+        </ion-item>
+      </ion-list> -->
 
-     
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Restaurants</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      
+      <ion-content>
+        <ion-list>
+          <ion-item *ngFor="let restaurant of restaurants">
+            <ion-avatar slot="start">
+              <img src="https://image.milimaj.com/i/milliyet/75/0x410/609a555d55427f0a548a5f57.jpg">
+            </ion-avatar>
+           
+            <ion-note slot="end">{{ restaurant.distance }}km</ion-note>
+          </ion-item>
+        </ion-list>
+      
+        <ion-infinite-scroll (ionInfinite)="onIonInfinite($event)">
+          <ion-infinite-scroll-content></ion-infinite-scroll-content>
+        </ion-infinite-scroll>
+      </ion-content>
+      
