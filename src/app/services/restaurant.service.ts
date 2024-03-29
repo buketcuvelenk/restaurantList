@@ -19,7 +19,7 @@ export class RestaurantService {
         'apiKey': 'bW9jay04ODc3NTU2NjExMjEyNGZmZmZmZmJ2'
       })
     };
-     // HTTP isteği yaparken gövde olarak parametreleri gönderin
+     
      const requestBody = {
       skip: 0,
       limit: 0,
